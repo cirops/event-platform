@@ -15,7 +15,7 @@ const GET_LESSONS_QUERY = gql`
 `;
 
 export const Sidebar = () => {
-  const { data } = useQuery(GET_LESSONS_QUERY)
+  const { data } = useQuery(GET_LESSONS_QUERY);
 
   console.log(data);
   return (
@@ -25,12 +25,42 @@ export const Sidebar = () => {
       </span>
 
       <div className="flex flex-col gap-8">
-        <Lesson title="Abertura do evento Ignite Lab" type='live' slug="abertura-do-event-ignite-lab" availableAt={new Date()} />
-        <Lesson title="Abertura do evento Ignite Lab" type='live' slug="abertura-do-event-ignite-lab" availableAt={new Date()} />
-        <Lesson title="Abertura do evento Ignite Lab" type='live' slug="abertura-do-event-ignite-lab" availableAt={new Date()} />
-        <Lesson title="Abertura do evento Ignite Lab" type='live' slug="abertura-do-event-ignite-lab" availableAt={new Date()} />
-        <Lesson title="Abertura do evento Ignite Lab" type='live' slug="abertura-do-event-ignite-lab" availableAt={new Date()} />
-        <Lesson title="Abertura do evento Ignite Lab" type='live' slug="abertura-do-event-ignite-lab" availableAt={new Date()} />
+        <Lesson
+          title="Abertura do evento Ignite Lab"
+          type="live"
+          slug="abertura-do-evento-ignite-lab"
+          availableAt={new Date()}
+        />
+        <Lesson
+          title="Abertura do evento Ignite Lab"
+          type="live"
+          slug="abertura-do-evento-ignite-lab"
+          availableAt={new Date()}
+        />
+        <Lesson
+          title="Abertura do evento Ignite Lab"
+          type="live"
+          slug="abertura-do-evento-ignite-lab"
+          availableAt={new Date()}
+        />
+        <Lesson
+          title="Abertura do evento Ignite Lab"
+          type="live"
+          slug="abertura-do-evento-ignite-lab"
+          availableAt={new Date()}
+        />
+        <Lesson
+          title="Abertura do evento Ignite Lab"
+          type="live"
+          slug="abertura-do-evento-ignite-lab"
+          availableAt={new Date()}
+        />
+        <Lesson
+          title="Abertura do evento Ignite Lab"
+          type="live"
+          slug="abertura-do-evento-ignite-lab"
+          availableAt={new Date()}
+        />
       </div>
     </aside>
   );
